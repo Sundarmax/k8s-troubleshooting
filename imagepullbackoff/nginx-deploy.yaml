@@ -14,6 +14,8 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx-image-demo:v1
+        image: sundarmax15/nginx-image-demo:v1
         ports:
         - containerPort: 80
+      imagePullSecrets:
+      - name: demo
